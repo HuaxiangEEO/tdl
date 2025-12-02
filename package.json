@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "A simple React todo application with dark theme",
   "main": "index.js",
+  "homepage": "https://huaxiangeeo.github.io/tdl/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
