@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #61dafb;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.todo-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #3d3d3d;
+  color: #e0e0e0;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.todo-input:focus {
+  border-color: #61dafb;
+}
+
+.category-select {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #3d3d3d;
+  color: #e0e0e0;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.category-select:focus {
+  border-color: #61dafb;
+}
+
+.add-btn {
+  padding: 12px 24px;
+  background-color: #61dafb;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #4fa8d8;
+}
+
+.category-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #444;
+  border-radius: 20px;
+  background-color: #3d3d3d;
+  color: #e0e0e0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #444;
+  border-color: #61dafb;
+}
+
+.filter-btn.active {
+  background-color: #61dafb;
+  color: #1a1a1a;
+  border-color: #61dafb;
+  font-weight: bold;
+}
+
+.category-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.category-工作 {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.category-个人 {
+  background-color: #10b981;
+  color: white;
+}
+
+.category-学习 {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #3d3d3d;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+  background-color: #444;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.todo-text {
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ff3333;
+}
+
+.empty-state {
+  text-align: center;
+  color: #888;
+  padding: 24px;
+  font-style: italic;
+}
